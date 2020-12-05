@@ -1,0 +1,79 @@
+.home{
+    background: radial-gradient(#525252,#131313);
+    height: 95vh;
+}
+.carousel{
+    height:50vh;
+    .gallery-cell {
+        height: 40vh;
+        margin-right: 10px;        
+        margin-top: 2rem;
+        background: #f54538;
+        // counter-increment: gallery-cell;
+        display: flex;
+        justify-content: space-between;
+        color:black;
+        .card{
+            background:white;
+            width:40rem;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+            border-radius: 2rem;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                width:100%;
+                height: 15rem;
+            }
+            a{
+                color:blue;
+                font-size:1.5rem;
+                margin-bottom:2px;
+            }
+            h4{
+                font-size:2rem;
+                margin:1rem 0rem 1rem 0rem;
+            }
+            p{
+                font-size:1.5rem;
+                padding:1rem;
+            }
+        }
+      }
+    
+    .gallery-cell:before {
+        display: block;
+        text-align: center;
+        content: '';
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+    }
+    
+}
+#desc{
+    margin:auto;
+    .head{
+        color:white;
+        font-size:3.5rem;
+    }
+    .info{
+        font-family: 'Merriweather Sans', sans-serif;
+        color:white;
+        font-size:1.5rem;
+        line-height: 3rem;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width:880px){
+    .home{
+        height: 170vh;
+    }
+    .carousel{
+        .gallery-cell{
+            height: 45vh;
+        }
+    }
+}

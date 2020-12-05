@@ -1,0 +1,29 @@
+body{
+    background:radial-gradient(#525252,#131313);
+}
+#main{ 
+    margin-left: 20rem;
+    margin-top:2vh;
+    height: 90vh;
+}
+#map_canvas{
+    width: 70%;
+    height: 500px;
+}
+.infoWindow{ 
+    width: 220px; 
+}
+#getID{
+    display: none;
+}
+
+@media screen and (max-width:880px){
+    #main{
+        width: 100%;
+        margin: 1rem;
+        height:110vh;
+    }
+    #map_canvas{
+        width:100%;
+    }
+}
